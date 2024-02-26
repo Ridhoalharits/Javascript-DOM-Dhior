@@ -1,7 +1,8 @@
 //DOM Selectin
 const judul = document.getElementById('judul')
+console.log(judul)
 judul.style.color='red'
-judul.innerHTML = "<em>Halo nama gua ridho</em>"
+
 
 const paragraph = document.getElementsByTagName('p')
 console.log(paragraph)
@@ -9,6 +10,9 @@ console.log(paragraph)
 for (let i = 0; i < paragraph.length ;i++){
     paragraph[i].style.backgroundColor = 'lightblue';
 }
+
+const getClass = document.getElementsByClassName('p1')
+console.log(getClass)
 
 const p = document.querySelector('#b p')
 p.style.color = 'red'
@@ -24,16 +28,16 @@ b.innerHTML = "Hello World"
 
 
 
-for (let l =0;l<5;l++){
-    const pBaru = document.createElement('p')
-const textBaru = document.createTextNode('ini paragraf baru')
-//ini buat save
-pBaru.appendChild(textBaru)
-const sectionA = document.getElementById('a')
-sectionA.appendChild(pBaru)
+// for (let l =0;l<5;l++){
+//     const pBaru = document.createElement('p')
+// const textBaru = document.createTextNode('ini paragraf baru')
+// //ini buat save
+// pBaru.appendChild(textBaru)
+// const sectionA = document.getElementById('a')
+// sectionA.appendChild(pBaru)
 
 
-}
+// }
 const pBaru = document.createElement('p')
 const textBaru = document.createTextNode('ini paragraf baru')
 //ini buat save
